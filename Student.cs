@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace p511_oop
 {
@@ -16,7 +20,7 @@ namespace p511_oop
 
         public void DisplayData()
         {
-            Console.WriteLine("\nДанные студента:");
+            Console.WriteLine("Данные студента:");
             Console.WriteLine($"ФИО: {FullName}");
             Console.WriteLine($"Дата рождения: {BirthDate}");
             Console.WriteLine($"Телефон: {PhoneNumber}");
