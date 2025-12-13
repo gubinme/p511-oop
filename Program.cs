@@ -11,10 +11,10 @@ namespace p511_oop
     {
         static void Main()
         {
-            Human human = new Human("Иван", 30);
-            Builder builder = new Builder("Петр", 35, "Маляр");
-            Sailor sailor = new Sailor("Андрей", 28, "Капитан");
-            Pilot pilot = new Pilot("Михаил", 40, "ABC123");
+            Human human = new Human("РРІР°РЅ", 30);
+            Builder builder = new Builder("РџРµС‚СЂ", 35, "РњР°Р»СЏСЂ");
+            Sailor sailor = new Sailor("РђРЅРґСЂРµР№", 28, "РљР°РїРёС‚Р°РЅ");
+            Pilot pilot = new Pilot("РњРёС…Р°РёР»", 40, "ABC123");
 
             human.ShowInfo();
             builder.ShowInfo();
