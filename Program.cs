@@ -51,7 +51,7 @@ namespace p511_oop
                 }
             }
 
-            Console.WriteLine($"Сумма между min и max: {sum}");
+            Console.WriteLine($"РЎСѓРјРјР° РјРµР¶РґСѓ min Рё max: {sum}");
         }
     }
 }
