@@ -10,21 +10,21 @@ namespace p511_oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Создание профилей студентов ---");
+            Console.WriteLine("--- РЎРѕР·РґР°РЅРёРµ РїСЂРѕС„РёР»РµР№ СЃС‚СѓРґРµРЅС‚РѕРІ ---");
 
-            Student student1 = new Student("Иван", "Петров", 19);
-            Console.WriteLine($"Студент 1:");
-            Console.WriteLine($"Привет, меня зовут {student1.FullName}, мне {student1.Age} лет.");
-            Console.WriteLine($"Полное имя: {student1.FullName}");
+            Student student1 = new Student("РРІР°РЅ", "РџРµС‚СЂРѕРІ", 19);
+            Console.WriteLine($"РЎС‚СѓРґРµРЅС‚ 1:");
+            Console.WriteLine($"РџСЂРёРІРµС‚, РјРµРЅСЏ Р·РѕРІСѓС‚ {student1.FullName}, РјРЅРµ {student1.Age} Р»РµС‚.");
+            Console.WriteLine($"РџРѕР»РЅРѕРµ РёРјСЏ: {student1.FullName}");
 
-            Student student2 = new Student("Анна", "Сидорова", 20);
-            Console.WriteLine($"Студент 2:");
-            Console.WriteLine($"Привет, меня зовут {student2.FullName}, мне {student2.Age} лет.");
-            Console.WriteLine($"Полное имя: {student2.FullName}");
+            Student student2 = new Student("РђРЅРЅР°", "РЎРёРґРѕСЂРѕРІР°", 20);
+            Console.WriteLine($"РЎС‚СѓРґРµРЅС‚ 2:");
+            Console.WriteLine($"РџСЂРёРІРµС‚, РјРµРЅСЏ Р·РѕРІСѓС‚ {student2.FullName}, РјРЅРµ {student2.Age} Р»РµС‚.");
+            Console.WriteLine($"РџРѕР»РЅРѕРµ РёРјСЏ: {student2.FullName}");
 
-            Console.WriteLine("--- Попытка изменить возраст на некорректное значение ---");
-            student1.Age = -5; // попытка установить некорректный возраст
-            Console.WriteLine($"Текущий возраст студента 1: {student1.Age}");
+            Console.WriteLine("--- РџРѕРїС‹С‚РєР° РёР·РјРµРЅРёС‚СЊ РІРѕР·СЂР°СЃС‚ РЅР° РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ ---");
+            student1.Age = -5; // РїРѕРїС‹С‚РєР° СѓСЃС‚Р°РЅРѕРІРёС‚СЊ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРѕР·СЂР°СЃС‚
+            Console.WriteLine($"РўРµРєСѓС‰РёР№ РІРѕР·СЂР°СЃС‚ СЃС‚СѓРґРµРЅС‚Р° 1: {student1.Age}");
         }
     }
 }
