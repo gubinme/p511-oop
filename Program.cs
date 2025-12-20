@@ -10,9 +10,9 @@ namespace p511_oop
     {
         static void Main()
         {
-            Console.Write("Введите текст: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚: ");
             string text = Console.ReadLine();
-            Console.WriteLine("Результат: " + CapitalizeSentences(text));
+            Console.WriteLine("Р РµР·СѓР»СЊС‚Р°С‚: " + CapitalizeSentences(text));
         }
 
         static string CapitalizeSentences(string text)
