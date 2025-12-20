@@ -10,16 +10,16 @@ namespace p511_oop
     {
         static void Main()
         {
-            Console.Write("Введите строку: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ: ");
             string text = Console.ReadLine();
-            Console.Write("Введите сдвиг: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ СЃРґРІРёРі: ");
             int shift = int.Parse(Console.ReadLine());
 
             string encrypted = CaesarEncrypt(text, shift);
             string decrypted = CaesarDecrypt(encrypted, shift);
 
-            Console.WriteLine($"Зашифровано: {encrypted}");
-            Console.WriteLine($"Расшифровано: {decrypted}");
+            Console.WriteLine($"Р—Р°С€РёС„СЂРѕРІР°РЅРѕ: {encrypted}");
+            Console.WriteLine($"Р Р°СЃС€РёС„СЂРѕРІР°РЅРѕ: {decrypted}");
         }
 
         static string CaesarEncrypt(string text, int shift)
