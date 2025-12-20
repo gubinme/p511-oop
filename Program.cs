@@ -10,16 +10,16 @@ namespace p511_oop
     {
         static void Main()
         {
-            Console.Write("Введите текст: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ С‚РµРєСЃС‚: ");
             string text = Console.ReadLine();
-            Console.Write("Введите недопустимое слово: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РЅРµРґРѕРїСѓСЃС‚РёРјРѕРµ СЃР»РѕРІРѕ: ");
             string badWord = Console.ReadLine();
 
             int count = 0;
             string result = ReplaceBadWords(text, badWord, ref count);
 
-            Console.WriteLine("Результат: " + result);
-            Console.WriteLine($"Статистика: {count} замены слова {badWord}.");
+            Console.WriteLine("Р РµР·СѓР»СЊС‚Р°С‚: " + result);
+            Console.WriteLine($"РЎС‚Р°С‚РёСЃС‚РёРєР°: {count} Р·Р°РјРµРЅС‹ СЃР»РѕРІР° {badWord}.");
         }
 
         static string ReplaceBadWords(string text, string badWord, ref int count)
