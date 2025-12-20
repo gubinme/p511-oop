@@ -18,11 +18,11 @@ namespace p511_oop
             int[,] add = AddMatrix(A, B);
             int[,] prod = MultiplyMatrix(A, B);
 
-            Console.WriteLine("Умножение на число:");
+            Console.WriteLine("РЈРјРЅРѕР¶РµРЅРёРµ РЅР° С‡РёСЃР»Рѕ:");
             PrintMatrix(mul);
-            Console.WriteLine("Сложение:");
+            Console.WriteLine("РЎР»РѕР¶РµРЅРёРµ:");
             PrintMatrix(add);
-            Console.WriteLine("Произведение:");
+            Console.WriteLine("РџСЂРѕРёР·РІРµРґРµРЅРёРµ:");
             PrintMatrix(prod);
         }
 
