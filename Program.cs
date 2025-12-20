@@ -10,15 +10,15 @@ namespace p511_oop
     {
         static void Main()
         {
-            // Одномерный массив A
+            // РћРґРЅРѕРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ A
             double[] A = new double[5];
-            Console.WriteLine("Введите 5 чисел для массива A:");
+            Console.WriteLine("Р’РІРµРґРёС‚Рµ 5 С‡РёСЃРµР» РґР»СЏ РјР°СЃСЃРёРІР° A:");
             for (int i = 0; i < A.Length; i++)
             {
                 A[i] = double.Parse(Console.ReadLine());
             }
 
-            // Двумерный массив B
+            // Р”РІСѓРјРµСЂРЅС‹Р№ РјР°СЃСЃРёРІ B
             double[,] B = new double[3, 4];
             Random rand = new Random();
             for (int i = 0; i < 3; i++)
@@ -29,9 +29,9 @@ namespace p511_oop
                 }
             }
 
-            // Вывод массивов
-            Console.WriteLine("Массив A: " + string.Join(" ", A));
-            Console.WriteLine("Массив B:");
+            // Р’С‹РІРѕРґ РјР°СЃСЃРёРІРѕРІ
+            Console.WriteLine("РњР°СЃСЃРёРІ A: " + string.Join(" ", A));
+            Console.WriteLine("РњР°СЃСЃРёРІ B:");
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -41,7 +41,7 @@ namespace p511_oop
                 Console.WriteLine();
             }
 
-            // Общие вычисления
+            // РћР±С‰РёРµ РІС‹С‡РёСЃР»РµРЅРёСЏ
             double max = double.MinValue, min = double.MaxValue, sum = 0, product = 1;
             int sumEvenA = 0;
             int sumOddColsB = 0;
@@ -66,9 +66,9 @@ namespace p511_oop
                 }
             }
 
-            Console.WriteLine($"Максимум: {max}, Минимум: {min}");
-            Console.WriteLine($"Сумма: {sum}, Произведение: {product}");
-            Console.WriteLine($"Сумма чётных A: {sumEvenA}, Сумма нечётных столбцов B: {sumOddColsB}");
+            Console.WriteLine($"РњР°РєСЃРёРјСѓРј: {max}, РњРёРЅРёРјСѓРј: {min}");
+            Console.WriteLine($"РЎСѓРјРјР°: {sum}, РџСЂРѕРёР·РІРµРґРµРЅРёРµ: {product}");
+            Console.WriteLine($"РЎСѓРјРјР° С‡С‘С‚РЅС‹С… A: {sumEvenA}, РЎСѓРјРјР° РЅРµС‡С‘С‚РЅС‹С… СЃС‚РѕР»Р±С†РѕРІ B: {sumOddColsB}");
         }
     }
 }
