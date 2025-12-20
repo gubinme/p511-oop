@@ -11,8 +11,8 @@ namespace p511_oop
         static void Main(string[] args)
         {
             ShowHeader();
-            double num1 = GetNumber("Введите первое число: ");
-            double num2 = GetNumber("Введите второе число: ");
+            double num1 = GetNumber("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
+            double num2 = GetNumber("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
             char operation = GetOperation();
             double result = Calculate(num1, num2, operation);
             ShowResult(num1, num2, operation, result);
@@ -20,8 +20,8 @@ namespace p511_oop
 
         static void ShowHeader()
         {
-            Console.WriteLine("--- Улучшенный калькулятор ---");
-            Console.WriteLine("Доступные операции: +, -, *, /");
+            Console.WriteLine("--- РЈР»СѓС‡С€РµРЅРЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ ---");
+            Console.WriteLine("Р”РѕСЃС‚СѓРїРЅС‹Рµ РѕРїРµСЂР°С†РёРё: +, -, *, /");
         }
 
         static double GetNumber(string prompt)
@@ -32,7 +32,7 @@ namespace p511_oop
 
         static char GetOperation()
         {
-            Console.Write("Введите символ операции: ");
+            Console.Write("Р’РІРµРґРёС‚Рµ СЃРёРјРІРѕР» РѕРїРµСЂР°С†РёРё: ");
             return Console.ReadLine()[0];
         }
 
@@ -45,7 +45,7 @@ namespace p511_oop
                 case '*': return a * b;
                 case '/': return b != 0 ? a / b : double.NaN;
                 default:
-                    Console.WriteLine("Ошибка: неизвестная операция!");
+                    Console.WriteLine("РћС€РёР±РєР°: РЅРµРёР·РІРµСЃС‚РЅР°СЏ РѕРїРµСЂР°С†РёСЏ!");
                     return double.NaN;
             }
         }
@@ -54,11 +54,11 @@ namespace p511_oop
         {
             if (double.IsNaN(result))
             {
-                Console.WriteLine("Ошибка: невозможно выполнить операцию.");
+                Console.WriteLine("РћС€РёР±РєР°: РЅРµРІРѕР·РјРѕР¶РЅРѕ РІС‹РїРѕР»РЅРёС‚СЊ РѕРїРµСЂР°С†РёСЋ.");
             }
             else
             {
-                Console.WriteLine($"Результат: {a} {op} {b} = {result}");
+                Console.WriteLine($"Р РµР·СѓР»СЊС‚Р°С‚: {a} {op} {b} = {result}");
             }
         }
     }
