@@ -10,9 +10,9 @@ namespace p511_oop
     {
         static void Main()
         {
-            Console.Write("Введите выражение (+ и -): ");
+            Console.Write("Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ (+ Рё -): ");
             string expr = Console.ReadLine();
-            Console.WriteLine("Результат: " + Calculate(expr));
+            Console.WriteLine("Р РµР·СѓР»СЊС‚Р°С‚: " + Calculate(expr));
         }
 
         static int Calculate(string expr)
