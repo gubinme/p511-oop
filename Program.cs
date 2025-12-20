@@ -10,34 +10,34 @@ namespace p511_oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Управление инвентарем ---");
+            Console.WriteLine("--- РЈРїСЂР°РІР»РµРЅРёРµ РёРЅРІРµРЅС‚Р°СЂРµРј ---");
 
             Inventory inventory = new Inventory();
 
-            inventory.AddProduct(new Product(1, "Молоко", 80.50m));
-            inventory.AddProduct(new Product(2, "Хлеб", 40.00m));
-            inventory.AddProduct(new Product(3, "Сыр", 450.99m));
+            inventory.AddProduct(new Product(1, "РњРѕР»РѕРєРѕ", 80.50m));
+            inventory.AddProduct(new Product(2, "РҐР»РµР±", 40.00m));
+            inventory.AddProduct(new Product(3, "РЎС‹СЂ", 450.99m));
 
-            Console.WriteLine("--- Поиск товара с ID 2 ---");
+            Console.WriteLine("--- РџРѕРёСЃРє С‚РѕРІР°СЂР° СЃ ID 2 ---");
             Product found = inventory.FindProduct(2);
             if (found != null)
             {
-                Console.WriteLine($"Найден товар: {found}");
+                Console.WriteLine($"РќР°Р№РґРµРЅ С‚РѕРІР°СЂ: {found}");
             }
             else
             {
-                Console.WriteLine("Товар с ID 2 не найден.");
+                Console.WriteLine("РўРѕРІР°СЂ СЃ ID 2 РЅРµ РЅР°Р№РґРµРЅ.");
             }
 
-            Console.WriteLine("--- Поиск товара с ID 99 ---");
+            Console.WriteLine("--- РџРѕРёСЃРє С‚РѕРІР°СЂР° СЃ ID 99 ---");
             found = inventory.FindProduct(99);
             if (found != null)
             {
-                Console.WriteLine($"Найден товар: {found}");
+                Console.WriteLine($"РќР°Р№РґРµРЅ С‚РѕРІР°СЂ: {found}");
             }
             else
             {
-                Console.WriteLine("Товар с ID 99 не найден.");
+                Console.WriteLine("РўРѕРІР°СЂ СЃ ID 99 РЅРµ РЅР°Р№РґРµРЅ.");
             }
         }
     }
