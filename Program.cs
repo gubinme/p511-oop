@@ -24,17 +24,17 @@ namespace p511_oop
             double area2 = rect2.GetArea();
             double perimeter2 = rect2.GetPerimeter();
 
-            Console.WriteLine("Прямоугольник 1:");
-            Console.WriteLine($"- Ширина: {rect1.width}");
-            Console.WriteLine($"- Высота: {rect1.height}");
-            Console.WriteLine($"- Площадь: {area1}");
-            Console.WriteLine($"- Периметр: {perimeter1}");
+            Console.WriteLine("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє 1:");
+            Console.WriteLine($"- РЁРёСЂРёРЅР°: {rect1.width}");
+            Console.WriteLine($"- Р’С‹СЃРѕС‚Р°: {rect1.height}");
+            Console.WriteLine($"- РџР»РѕС‰Р°РґСЊ: {area1}");
+            Console.WriteLine($"- РџРµСЂРёРјРµС‚СЂ: {perimeter1}");
 
-            Console.WriteLine("Прямоугольник 2:");
-            Console.WriteLine($"- Ширина: {rect2.width}");
-            Console.WriteLine($"- Высота: {rect2.height}");
-            Console.WriteLine($"- Площадь: {area2}");
-            Console.WriteLine($"- Периметр: {perimeter2}");
+            Console.WriteLine("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє 2:");
+            Console.WriteLine($"- РЁРёСЂРёРЅР°: {rect2.width}");
+            Console.WriteLine($"- Р’С‹СЃРѕС‚Р°: {rect2.height}");
+            Console.WriteLine($"- РџР»РѕС‰Р°РґСЊ: {area2}");
+            Console.WriteLine($"- РџРµСЂРёРјРµС‚СЂ: {perimeter2}");
         }
     }
 }
