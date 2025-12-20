@@ -10,26 +10,26 @@ namespace p511_oop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Рендеринг документов ---");
-            Console.WriteLine("Начинаю рендеринг...");
+            Console.WriteLine("--- Р РµРЅРґРµСЂРёРЅРі РґРѕРєСѓРјРµРЅС‚РѕРІ ---");
+            Console.WriteLine("РќР°С‡РёРЅР°СЋ СЂРµРЅРґРµСЂРёРЅРі...");
             Console.WriteLine("--------------------");
 
             List<Document> documents = new List<Document>
             {
                 new TextDocument
                 {
-                    Author = "Лев Толстой",
-                    Content = "Все счастливые семьи похожи друг на друга..."
+                    Author = "Р›РµРІ РўРѕР»СЃС‚РѕР№",
+                    Content = "Р’СЃРµ СЃС‡Р°СЃС‚Р»РёРІС‹Рµ СЃРµРјСЊРё РїРѕС…РѕР¶Рё РґСЂСѓРі РЅР° РґСЂСѓРіР°..."
                 },
                 new ImageDocument
                 {
-                    Author = "Иван Шишкин",
+                    Author = "РРІР°РЅ РЁРёС€РєРёРЅ",
                     Resolution = "3558x2180"
                 },
                 new TextDocument
                 {
-                    Author = "Михаил Булгаков",
-                    Content = "В белом плаще с кровавым подбоем..."
+                    Author = "РњРёС…Р°РёР» Р‘СѓР»РіР°РєРѕРІ",
+                    Content = "Р’ Р±РµР»РѕРј РїР»Р°С‰Рµ СЃ РєСЂРѕРІР°РІС‹Рј РїРѕРґР±РѕРµРј..."
                 }
             };
 
