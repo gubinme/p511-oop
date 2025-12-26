@@ -6,10 +6,42 @@ using System.Threading.Tasks;
 
 namespace p511_oop
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            Console.Write("Введите выражение (+ и -): ");
+            string expr = Console.ReadLine();
+            Console.WriteLine("Результат: " + Calculate(expr));
+        }
+
+        static int Calculate(string expr)
+        {
+            int result = 0;
+            int current = 0;
+            bool isPositive = true;
+
+            foreach (char c in expr)
+            {
+                if (char.IsDigit(c))
+                {
+                    current = current * 10 + (c - '0');
+                }
+                else if (c == '+')
+                {
+                    result += isPositive ? current : -current;
+                    current = 0;
+                    isPositive = true;
+                }
+                else if (c == '-')
+                {
+                    result += isPositive ? current : -current;
+                    current = 0;
+                    isPositive = false;
+                }
+            }
+            result += isPositive ? current : -current;
+            return result;
         }
     }
 }
